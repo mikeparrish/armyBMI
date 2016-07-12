@@ -1,0 +1,6 @@
+<testdata>
+    <vars heightFeet="5" heightInches="2" bodyFat="body fat = 29%" loop="verifyHeight1.jpg"/>
+    <vars heightFeet="5" heightInches="5" bodyFat="body fat = 37%" loop="verifyHeight2.jpg"/>
+    <vars heightFeet="5" heightInches="10" bodyFat="body fat = 24%" loop="verifyHeight3.jpg"/>
+    <vars heightFeet="6" heightInches="6" bodyFat="body fat = 20%" loop="verifyHeight4.jpg"/>
+</testdata>

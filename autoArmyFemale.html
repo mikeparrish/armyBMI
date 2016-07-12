@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.calculator.net/" />
+<title>ArmyBodyFatCalcFemale</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ArmyBodyFatCalcFemale</td></tr>
+</thead><tbody>
+<!-- Title: autoArmyFemale.html
+     Objective: automate the input height and verify correct percent of body fat
+     Author Mike Parrish
+     Date   Dec 28,2015
+-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Army Body Fat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Army Body Fat Calculator</td>
+	<td></td>
+</tr>
+<!--comment: assert that the test is starting on the correct page-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=csex2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cage</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>file://C:\Users\mike.parrish\Documents\SeleniumTests\scripts\armyFemale.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${heightFeet}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cheightfeet</td>
+	<td>${heightFeet}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cheightinch</td>
+	<td>${heightInches}</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\Users\mike.parrish\Documents\SeleniumTests\screenshots\autoArmyFemaleImages\${loop}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cneckfeet</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cneckinch</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cwaistfeetf</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cwaistinchf</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=chipfeet</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=chipinch</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;image&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${bodyFat}</td>
+	<td></td>
+</tr>
+<!--comment: Echo the value that the Text is being compared against.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=b</td>
+	<td>${bodyFat}</td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
